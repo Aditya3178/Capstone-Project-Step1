@@ -31,3 +31,6 @@ Toronto_data = pd.read_csv("http://cocl.us/Geospatial_data")
 Toronto_data.head(5)
 Toronto_neigh = pd.read_csv(r'/Users/aditya/Downloads/Toronto_neigh.csv')
 Toronto_neigh.head(5)
+Toronto_NDC = Toronto_neigh[Toronto_neigh["Borough"] ~== "Not assigned"]
+Toronto_Fin = Toronto_NDC[Toronto_NDC["Borough"] ~== "Not assigned"],[neighborhood]=="Not assigned"],[neighborhood]=[Borough]
+Toronto_Fin.shape()
